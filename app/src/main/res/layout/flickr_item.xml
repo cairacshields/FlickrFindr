@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        >
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/flick_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/flickr_item_image"
+            app:layout_constraintTop_toTopOf="parent"
+        />
+        <TextView
+                android:id="@+id/flickr_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                tools:text="Some Title Here"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                app:layout_constraintTop_toBottomOf="@+id/flick_item_image"
+
+        />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
